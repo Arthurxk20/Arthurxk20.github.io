@@ -1,0 +1,23 @@
+info.CSS
+
+pour lier CSS et html il faut mettre cette commande "<link rel="stylesheet" href="style.css">" avec les noms qui corespondrent au fichier CSS et HTML. dans la partie head du fichier HTML.
+
+Dans un code CSS comme celui-ci, on trouve en fait trois éléments différents :
+
+Le sélecteur : ici on écrit les noms des balises HTML dont on veut modifier l'apparence. Par exemple, si je veux modifier l'apparence de tous les paragraphes  <p>  , je dois écrire  p  (sans les chevrons).
+
+La ou les propriétés CSS : les effets de style sont listés via des propriétés. Par exemple,  color  permet d'indiquer la couleur du texte,  font-size  permet d'indiquer la taille du texte, etc. Il existe BEAUCOUP de propriétés CSS ! Mais rassurez-vous, vous n’avez pas besoin de les connaître toutes par cœur.
+
+…et leurs valeurs : pour chaque propriété CSS, on doit indiquer une valeur. Par exemple, pour la propriété  color  , il faut indiquer le nom de la couleur. Pour font-size, il faut indiquer quelle taille on veut, etc.
+
+ Si les deux balises ont le même style, il suffit de combiner la déclaration en séparant les noms des balises par une virgule :
+
+h1, p
+{
+    color: blue;
+}
+
+dans la partie html déclarer que cette ligne est par exemple info donc <a classe="info"> blabla </a> et dans le CSS déclarer .info { color: red; } pour que le texte de cette ligne soit rouge.
+
+
+Utiliser google fonts pour choisir une police d'écriture convenable puis coller les link dans html 

@@ -4,6 +4,26 @@ H2 {
 }
 
 .Titre {
-    color: rgb(102, 26, 202);
+    color: rgba(102, 26, 202, 1); /* opassité tk entre 1 et 0 */
     text-decoration: underline;
+     font-family: "Parisienne", cursive;
+     font-size: 5em;
+     text-align: center;
+     background-color: rgba(255, 155, 255, 0.5);
+}
+
+Body {
+    background-color: rgba(255, 155, 255, 1);
+}
+/*
+.Info-GitHub {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+     font-family: "Parisienne", cursive;
+} */
+
+.H2 {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+     font-family: "Parisienne", cursive;
 }
