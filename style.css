@@ -4,7 +4,7 @@ H2 {
 }
 
 .Titre {
-    color: rgba(102, 26, 202, 1); /* opassité tk entre 1 et 0 */
+    color: rgba(102, 26, 202, 1); /* opassité entre 1 et 0 */
     text-decoration: underline;
      font-family: "Parisienne", cursive;
      font-size: 5em;
@@ -12,8 +12,10 @@ H2 {
      background-color: rgba(255, 155, 255, 0.5);
 }
 
-Body {
-    background-color: rgba(255, 155, 255, 1);
+body {
+
+background: linear-gradient(90deg, #8360c3 20%, #2ebf91 95%);
+
 }
 /*
 .Info-GitHub {
