@@ -1,12 +1,12 @@
 p,
 H2 {
     color: rgb(0, 0, 0);
+   border-radius: 85% 15% 86% 14%,
 }
-
 .Titre {
     color: rgba(102, 26, 202, 1); /* opassité entre 1 et 0 */
     text-decoration: underline;
-     font-family: "Parisienne", cursive;
+     /* font-family: "Parisienne", cursive; */
      font-size: 5em;
      text-align: center;
      background-color: rgba(255, 155, 255, 0.5);
@@ -14,7 +14,7 @@ H2 {
 
 body {
 
-background: linear-gradient(90deg, #8360c3 20%, #2ebf91 95%);
+/* background: linear-gradient(90deg, #8360c3 20%, #2ebf91 95%); */ 
 
 }
 /*
@@ -28,4 +28,24 @@ background: linear-gradient(90deg, #8360c3 20%, #2ebf91 95%);
     color: rgb(0, 0, 0);
     text-decoration: underline;
      font-family: "Parisienne", cursive;
+}
+
+.info {
+    color: rgb(0, 0, 0);
+     font-family: "Parisienne", cursive;
+     display: inline-block;
+     padding: 100px;
+     border: 1px solid rgb(0, 0, 0);
+     
+}
+.Lien {
+    color: black;                /* Couleur du texte */
+    text-decoration: underline;  /* Souligne le lien */
+    display: inline-block;       /* Autorise l'agrandissement */
+    transition: transform 0.3s;  /* Animation progressive */
+}
+
+.Lien:hover {
+    transform: scale(1.10);     /* Agrandissement de 15 % */
+    cursor: pointer;            /* Curseur en forme de main */
 }
