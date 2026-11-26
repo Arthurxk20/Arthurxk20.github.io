@@ -1,28 +1,113 @@
+
 <!DOCTYPE html>
+
+<!-- Indique que le document est en HTML5 et en français -->
 <html lang="fr">
+
     <head>
+        <!-- Permet d'afficher correctement les accents -->
         <meta charset="utf-8">
-        <title>Arthur Bizot | Portfolio</title>
+
+        <!-- Adapte la page aux écrans des téléphones et des ordinateurs -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Titre affiché dans l'onglet du navigateur -->
+        <title>Arthur Bizot | Portfolio</title>
+
+        <!-- Relie le fichier HTML au fichier CSS -->
         <link rel="stylesheet" href="style.css">
+
+        <!-- Prépare la connexion aux serveurs de Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!-- Importe la police d'écriture Parisienne -->
         <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+        
     </head>
+
+    <nav>
+        <ul>  <!-- Barre de navigation avec des liens vers les différentes pages du site -->
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="PAGE 2.HTML">Page 2</a></li>
+        <li><a href="PAGE 3.HTML">Page 3</a></li>
+        <li><a href="PAGE 4.HTML">Page 4</a></li>  
+       </ul>                                                               
+    </nav>
+    <P>AB.</P>
+    <br>
+    <H3>BIENVENUE SUR MON PORTFOLIO</H3>
+    <h1>Arthur Bizot</h1>
+    <h2>étudiant en Informatique</h2>
+    <!-- Contient tous les éléments visibles de la page -->
+    <p>Étudiant en <a class="Lien" href="https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-cybersecurite-informatique-et-reseaux-electronique/" target="_blank">Bac Pro CIEL</a></p>
     <body>
-      <p>
-      <!--  <a href ="image Poire Tag/poire zoom.png" target="_blank"> <img src="image Poire Tag/poire.png" alt="Logo de Poire Tag" title="Logo de Poire Tag" width="100" height="100"> </a>-->
-      </p> 
-      <h1 class="Titre">Bienvenue sur ma page</h1>
-          <h2 class="H2">Ici Arthur Bizot <em><strong>là pour vous servir</strong></em></h2> <!-- Salut le lecteur -->
-          
-         <p id="mon-parcours-scolaire">ici vous pouvez trouver des informations sur mon parcours scolaire</p>
-          <ol>
-            <li>j'ai fait un bac pro ciel</li>
-            <li>je suis allé au collége Jean Rostand</li>
-          </ol> 
-        <a class="Info" href="https://github.com/Arthurxk20" target="_blank">   ici vous pouvez trouver mon compte <span class="Info-GitHub">GitHub</span>  </a>  <br>
-        <a href="PAGE 2.HTML">Aller à la page 2  </a>
- 
+
+        <!-- Ancien logo désactivé grâce à un commentaire HTML
+        <a href="image Poire Tag/poire zoom.png" target="_blank">
+            <img src="image Poire Tag/poire.png"
+                 alt="Logo de Poire Tag"
+                 title="Logo de Poire Tag"
+                 width="100"
+                 height="100">
+        </a>
+        -->
+
+        <!-- Titre principal de la page -->
+        <!-- class permet de personnaliser son apparence en CSS -->
+        <h1 class="Titre">Bienvenue sur ma page</h1>
+
+        <!-- Titre secondaire -->
+        <!-- em met le texte en italique par défaut -->
+        <!-- strong indique un texte important, en gras par défaut -->
+        <h2 class="H2">
+            Ici Arthur Bizot <em><strong>là pour vous servir</strong></em>
+        </h2>
+
+        <!-- id crée un identifiant unique permettant de cibler
+             cet élément en CSS, en JavaScript ou avec une ancre -->
+        <p id="mon-parcours-scolaire">
+            Ici vous pouvez trouver des informations sur mon parcours scolaire
+        </p>
+
+        <!-- ol permet de créer une liste numérotée -->
+        <!-- li représente un élément de la liste -->
+        <ol>
+            <li>Je suis en bac pro CIEL</li>
+            <li>Je suis allé au collège Jean Rostand</li>
+        </ol>
+
+        <!-- Lien externe vers GitHub -->
+        <!-- href indique la destination du lien -->
+        <!-- target="_blank" ouvre le lien dans un nouvel onglet -->
+        <!-- span permet de personnaliser uniquement le mot GitHub -->
+        <a class="Info" href="https://github.com/Arthurxk20" target="_blank">
+            Ici vous pouvez trouver mon compte
+            <span class="Info-GitHub">GitHub</span>
+        </a>
+
+        <!-- br permet de faire un retour à la ligne -->
+        <br>
+
+        <!-- Lien vers la deuxième page du site -->
+        <a href="PAGE 2.HTML">Aller à la page 2</a>
+
+        <!-- Ancre : déplace la page vers un élément possédant cet id -->
+        <a href="#mon-parcours-scolaire" class="Info">
+            Aller vers mon parcours scolaire
+        </a>
+        <p>bonjour aujourdg</p>
+
+        <!-- Bouton permettant de changer de page grâce à JavaScript -->
+        <!-- onclick déclenche une instruction lors du clic -->
+        <!-- window.location.href modifie l'adresse de la page actuelle -->
+        <button class="Info" type="button"
+                onclick="window.location.href='PAGE 2.HTML';">
+            Aller à la page 2
+        </button>
+
     </body>
+
 </html>
+
