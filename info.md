@@ -36,3 +36,10 @@ Utiliser google fonts pour choisir une police d'écriture convenable puis coller
 #AD6BDC
 #EAD9FA
 #F0EAF4
+
+.Titre {
+    margin-top: 50px;    /* Espace au-dessus */
+    margin-bottom: 30px; /* Espace en dessous */
+    margin-left: 20px;   /* Espace à gauche */
+    margin-right: 20px;  /* Espace à droite */
+}

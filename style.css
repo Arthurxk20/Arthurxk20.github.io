@@ -1,17 +1,29 @@
+.index {
+    color: white;
+    font-family: "Parisienne", cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+head {
+}
 .bordureenhaut {
     border-top: 3px #2F1648 solid;
     border-right: 3px #2F1648 solid;
     border-bottom: 3px #2F1648 solid;
     border-left: 3px #2F1648 solid;
-    background: rgba(47, 22, 72, 0.5);
+    background: rgba(47, 22, 72, 1);
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center; /* Aligne verticalement les éléments */
     font-family: "Parisienne", cursive;
+   
 }
 p,
 H2 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .Titre {
@@ -30,6 +42,7 @@ body {
         linear-gradient(135deg, #2f1648, #503075 48%, #372050);
          min-height: 100vh;
     margin: 0;
+    color: rgb(255, 255, 255);
     
 }
 /*
@@ -40,21 +53,21 @@ body {
 } */
 
 .H2 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
      font-family: "Parisienne", cursive;
 }
 
 .info {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
      font-family: "Parisienne", cursive;
      display: inline-block;
      padding: 100px;
-     border: 1px solid rgb(0, 0, 0);
+     border: 1px solid rgb(255, 255, 255);
      
 }
 .LienCiel{
-    color: black;                /* Couleur du texte */
+    color: rgb(255, 255, 255);                /* Couleur du texte */
     text-decoration: underline;  /* Souligne le lien */
     display: inline-block;       /* Autorise l'agrandissement */
     transition: transform 0.3s;  /* Animation progressive */
@@ -74,20 +87,23 @@ nav li:not(:last-child)::after {
 }
 
 /* Personnalise les liens */
-nav a {
-    color: black;
-    text-decoration: underline;
+.LiquidGlass a {
+    color: #e8d9f6;
+    text-decoration: none;
     display: inline-block;
     transition: transform 0.3s;
     font-size: 1.5em;
 }
 
 /* Agrandit les liens au survol */
-nav a:hover {
+.LiquidGlass a:hover {
     transform: scale(1.15);
+       color: #FFFFFF;
+    text-shadow: 0 0 12px #DDAFFF;
+
 }
 /* test d'interface graphique pour le menu de navigation */
-nav ul {
+.LiquidGlass {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,14 +116,14 @@ nav ul {
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 50px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15),
-        inset 0 1px 2px rgba(255, 255, 255, 0.47);
+    box-shadow: 0 8px 32px  rgba(0, 0, 0, 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.47);
 }
 
 
 
 .Logo, .Numero {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1em; /* taille du texte */
     margin: 0;
 }
