@@ -21,3 +21,18 @@ dans la partie html déclarer que cette ligne est par exemple info donc <a class
 
 
 Utiliser google fonts pour choisir une police d'écriture convenable puis coller les link dans html 
+
+    <!-- Ancien logo désactivé grâce à un commentaire HTML
+        <a href="image Poire Tag/poire zoom.png" target="_blank">
+            <img src="image Poire Tag/poire.png"
+                 alt="Logo de Poire Tag"
+                 title="Logo de Poire Tag"
+                 width="100"
+                 height="100">
+        </a>
+        -->
+        #2F1648
+#503075
+#AD6BDC
+#EAD9FA
+#F0EAF4
