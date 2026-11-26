@@ -1,12 +1,12 @@
 p,
 H2 {
     color: rgb(0, 0, 0);
-   border-radius: 85% 15% 86% 14%,
 }
+
 .Titre {
     color: rgba(102, 26, 202, 1); /* opassité entre 1 et 0 */
     text-decoration: underline;
-     /* font-family: "Parisienne", cursive; */
+     font-family: "Parisienne", cursive;
      font-size: 5em;
      text-align: center;
      background-color: rgba(255, 155, 255, 0.5);
@@ -14,7 +14,7 @@ H2 {
 
 body {
 
-/* background: linear-gradient(90deg, #8360c3 20%, #2ebf91 95%); */ 
+background: linear-gradient(90deg, #8360c3 20%, #2ebf91 95%);
 
 }
 /*
@@ -48,4 +48,62 @@ body {
 .Lien:hover {
     transform: scale(1.10);     /* Agrandissement de 15 % */
     cursor: pointer;            /* Curseur en forme de main */
+}
+
+/* Cible toutes les listes présentes dans nav */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    font-family: "Parisienne", cursive;
+    background-color: RGB(255, 155, 255, 0.5); /* Couleur de fond */
+    width: fit-content;          /* Adapte la largeur au contenu */
+    margin: auto;                /* Centre le menu dans la page */
+    padding: 15px 30px;          /* Espace intérieur du menu */
+    border-radius: 15px;         /* Arrondit les angles */
+}
+
+/* Place les points entre les liens */
+nav li:not(:last-child)::after {
+    content: "•";
+    margin-left: 20px;
+    
+}
+
+/* Personnalise les liens */
+nav a {
+    color: black;
+    text-decoration: underline;
+    display: inline-block;
+    transition: transform 0.3s;
+    font-size: 1.5em;
+}
+
+/* Agrandit les liens au survol */
+nav a:hover {
+    transform: scale(1.15);
+}
+
+
+
+
+/* test d'interface graphique pour le menu de navigation */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.47);
 }
