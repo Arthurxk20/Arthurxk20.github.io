@@ -1,149 +1,150 @@
-
 <!DOCTYPE html>
+<html lang="fr">
 
-<!-- Indique que le document est en HTML5 et en français -->
-<html classe= "index" lang="fr">
+<head>
 
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <body>
-        <head>
-        <!-- Permet d'afficher correctement les accents -->
-        <meta charset="utf-8">
+    <title>Arthur Bizot | Portfolio</title>
 
-        <!-- Adapte la page aux écrans des téléphones et des ordinateurs -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Feuille de style CSS -->
+    <link rel="stylesheet" href="style.css">
 
-        <!-- Titre affiché dans l'onglet du navigateur -->
-        <title>Arthur Bizot | Portfolio</title>
+    <!-- Importation de la police Parisienne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
-        <!-- Relie le fichier HTML au fichier CSS -->
-        <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- Prépare la connexion aux serveurs de Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<body>
 
-        <!-- Importe la police d'écriture Parisienne -->
-        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!-- ==========================================
+         01 — EN-TÊTE ET NAVIGATION LIQUID GLASS
+         ========================================== -->
 
-        
-        </head>
+    <header class="bordureenhaut">
 
-        <header class="bordureenhaut">
-         <p class="Logo">AB.</p>
+        <p class="Logo">AB.</p>
 
-             <nav>
-        <ul class="LiquidGlass">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="projets.html">Projets</a></li>
-            <li><a hsref="parcours.html">Parcours</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-         </nav>
+        <nav>
+            <ul class="LiquidGlass">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-          <p class="Numero">01 / 04</p>
+        <p class="Numero">01 / 04</p>
 
-        </header>
-    
-     <br>
-        <H3>BIENVENUE SUR MON PORTFOLIO</H3>
-        <h1>Arthur Bizot</h1>
-        <h2>étudiant en Informatique</h2>
-        <!-- Contient tous les éléments visibles de la page -->
-        <p>Étudiant en <a class="LienCiel" href="https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-cybersecurite-informatique-et-reseaux-electronique/" target="_blank">Bac Pro CIEL</a></p>
-    
-
-        <!-- Titre principal de la page -->
-        <!-- class permet de personnaliser son apparence en CSS -->
-        <h1 class="Titre">Bienvenue sur ma page</h1>
-
-        <!-- Titre secondaire -->
-        <!-- em met le texte en italique par défaut -->
-        <!-- strong indique un texte important, en gras par défaut -->
-        <h2 class="H2">
-            Ici Arthur Bizot <em><strong>là pour vous servir</strong></em>
-        </h2>
-
-        <!-- id crée un identifiant unique permettant de cibler
-             cet élément en CSS, en JavaScript ou avec une ancre -->
-        <p id="mon-parcours-scolaire">
-            Ici vous pouvez trouver des informations sur mon parcours scolaire
-        </p>
-
-        <!-- ol permet de créer une liste numérotée -->
-        <!-- li représente un élément de la liste -->
-        <ol>
-            <li>Je suis en bac pro CIEL</li>
-            <li>Je suis allé au collège Jean Rostand</li>
-        </ol>
-
-        <!-- Lien externe vers GitHub -->
-        <!-- href indique la destination du lien -->
-        <!-- target="_blank" ouvre le lien dans un nouvel onglet -->
-        <!-- span permet de personnaliser uniquement le mot GitHub -->
-        <a class="Info" href="https://github.com/Arthurxk20" target="_blank">
-            Ici vous pouvez trouver mon compte
-            <span class="Info-GitHub">GitHub</span>
-        </a>
-
-        <!-- br permet de faire un retour à la ligne -->
-        <br>
-
-        <!-- Lien vers la deuxième page du site -->
-        <a href="PAGE 2.HTML">Aller à la page 2</a>
-
-        <!-- Ancre : déplace la page vers un élément possédant cet id -->
-        <a href="#mon-parcours-scolaire" class="Info">
-            Aller vers mon parcours scolaire
-        </a>
-        
-
-        <!-- Bouton permettant de changer de page grâce à JavaScript -->
-        <!-- onclick déclenche une instruction lors du clic -->
-        <!-- window.location.href modifie l'adresse de la page actuelle -->
-        <!-- <button class="buttonpage2" type="button"
-                onclick="window.location.href='PAGE 2.HTML';">
-            Aller à la page 2
-        </button> -->
+    </header>
 
 
+    <!-- Début du contenu principal du site -->
 
-        <main class = partie2>
-    <img class="ImageCode"
-     src="image/code.png"
-     alt="Code source de mon portfolio"
-     title="Code source de mon portfolio">
+    <main>
+
+        <!-- ======================================
+             02 — PRÉSENTATION PERSONNELLE
+             ====================================== -->
+
+        <section class="partie1">
+
+            <!-- Cercles décoratifs en arrière-plan -->
+            <div class="Cercle"></div>
+
+            <h3>BIENVENUE SUR MON PORTFOLIO</h3>
+
+            <h1>Arthur Bizot</h1>
+
+            <h2>Étudiant en informatique</h2>
+
+            <p>
+                Étudiant en
+                <a class="LienCiel"
+                   href="https://www.onisep.fr/ressources/univers-formation/formations/lycees/bac-pro-cybersecurite-informatique-et-reseaux-electronique/"
+                   target="_blank">
+                    Bac Pro CIEL
+                </a>
+            </p>
+
+            <h1 class="Titre">Bienvenue sur ma page</h1>
+
+            <h2 class="H2">
+                Ici Arthur Bizot
+                <em><strong>là pour vous servir</strong></em>
+            </h2>
+
+            <p id="mon-parcours-scolaire">
+                Ici vous pouvez trouver des informations sur mon parcours scolaire
+            </p>
+
+            <ol>
+                <li>Je suis en bac pro CIEL</li>
+                <li>Je suis allé au collège Jean Rostand</li>
+            </ol>
+
+            <a class="Info"
+               href="https://github.com/Arthurxk20"
+               target="_blank">
+                Ici vous pouvez trouver mon compte
+                <span class="Info-GitHub">GitHub</span>
+            </a>
+
+            <br>
+
+            <a href="PAGE 2.HTML">Aller à la page 2</a>
+
+            <a href="#mon-parcours-scolaire" class="Info">
+                Aller vers mon parcours scolaire
+            </a>
+
+        </section>
 
 
+        <!-- ======================================
+             03 — RÉALISATIONS ET PROJETS
+             ====================================== -->
 
-        </main>
+        <section class="partie2">
 
-        <main class = partie3>
+            <img class="ImageCode"
+                 src="image/code.png"
+                 alt="Code source de mon portfolio"
+                 title="Code source de mon portfolio">
 
-
-
-
-        </main>
-
-        <footer>
-            
-           <p class="contact">04 - CONTACT </p>
-            
-            <p>© 2026 Arthur Bizot. Tous droits réservés. Email: arthur.bizot@outlook.com tel: +33 06 07 56 73 25 </p>
+        </section>
 
 
+        <!-- ======================================
+             04 — PARCOURS ET COMPÉTENCES
+             ====================================== -->
+
+        <section class="partie3">
+
+            <!-- Contenu à ajouter -->
+
+        </section>
+
+    </main>
 
 
+    <!-- ==========================================
+         05 — PIED DE PAGE ET CONTACT
+         ========================================== -->
 
+    <footer>
 
+        <p class="contact">04 — CONTACT</p>
 
+        <p>© 2026 Arthur Bizot. Tous droits réservés.</p>
 
+        <!-- Coordonnées professionnelles à ajouter -->
 
+    </footer>
 
-
-        </footer>
-    </body>
+</body>
 
 </html>
-

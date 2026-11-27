@@ -6,14 +6,11 @@ head {
 }
 
 body {
-    /* Superposition de trois dégradés pour créer les jeux de lumière */
-    background:
-        radial-gradient(ellipse at 85% 22%, #ad6bdc95, transparent 53%),
-        radial-gradient(ellipse at 20% 90%, #6237b6, transparent 60%),
-        linear-gradient(135deg, #2f1648, #503075 48%, #372050);
+    background-color: #1D122E;
+    color: #F8F4FF;
+    margin: 0;
+    min-height: 100vh;
 
-    min-height: 100vh; /* Hauteur minimale de la fenêtre */
-    margin: 0;        /* Supprime les marges du navigateur */
     color: rgb(255, 255, 255);
 }
 
@@ -143,6 +140,18 @@ nav li:not(:last-child)::after {
     padding: 20px;
 }
 
+.partie1 {
+    background:
+        radial-gradient(ellipse at 85% 22%, #ad6bdc95, transparent 53%),
+        radial-gradient(ellipse at 20% 90%, #6237b6, transparent 60%),
+        linear-gradient(135deg, #2f1648, #503075 48%, #372050);
+
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    padding: 50px 7%;
+}
+
 
 /* Titre principal */
 
@@ -190,7 +199,23 @@ nav li:not(:last-child)::after {
     transform: scale(1.10); /* Agrandissement de 10 % */
     cursor: pointer;
 }
+.Cercle {     /* élement graphique rajouter par l'ia */ 
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    right: -80px;
+    top: 45px;
+    border-radius: 50%;
 
+    border: 1px solid rgba(255, 255, 255, 0.13);
+
+    box-shadow:
+        0 0 0 24px rgba(255, 255, 255, 0.03),
+        0 0 0 50px rgba(255, 255, 255, 0.025),
+        0 0 0 76px rgba(255, 255, 255, 0.02);
+
+    pointer-events: none;
+}
 
 /* ==================================================
    05 — DEUXIÈME PARTIE : RÉALISATIONS ET PROJETS
