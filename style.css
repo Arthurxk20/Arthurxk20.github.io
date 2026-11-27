@@ -58,12 +58,12 @@ body {
      font-family: "Parisienne", cursive;
 }
 
-.info {
+.buttonpage2 {
     color: rgb(255, 255, 255);
      font-family: "Parisienne", cursive;
-     display: inline-block;
-     padding: 100px;
-     border: 1px solid rgb(255, 255, 255);
+     display : inline-block;
+     padding : 10px;
+     border : 1px solid rgb(255, 255, 255);
      
 }
 .LienCiel{
@@ -138,4 +138,30 @@ nav li:not(:last-child)::after {
     justify-self: start; /* Place le logo à gauche */
     margin-left: 20px;
     font-size: 1.6em;
+}
+
+.partie2 {
+    background-color: #F0EAF4; /* Blanc légèrement violet */
+    color: #241830;            /* Couleur du texte */
+    min-height: 60vh;          /* Hauteur minimale */
+    padding: 5em 7%;          /* Espacement intérieur */
+}
+
+.partie3 {
+    background-color: #2f1648; /* Blanc légèrement violet */
+    color: #ffffff;            /* Couleur du texte */
+    min-height: 60vh;          /* Hauteur minimale */
+    padding: 5em 7%;          /* Espacement intérieur */
+}
+
+footer {
+
+padding: 5em 7%;    
+
+}
+
+.tt {
+    color: rgb(255, 255, 255);
+     justify-self: start;
+     font-family: "Parisienne", cursive;
 }
