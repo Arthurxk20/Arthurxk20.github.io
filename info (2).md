@@ -50,3 +50,10 @@ vw : s'adapte directement à la largeur de l'écran.
 
 
 px : conserve une dimension fixe.
+Il existe plusieurs valeurs :
+Valeur	Comportement
+static	Position normale par défaut.
+relative	Position relative à son emplacement initial.
+absolute	Positionnement indépendant du flux normal.
+fixed	Reste fixe par rapport à l'écran.
+sticky	Reste collé à une position pendant le défilement.

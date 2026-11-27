@@ -33,12 +33,6 @@ H2 {
     border-left: 3px #2F1648 solid;
     min-height: 11vh;
     background: rgba(47, 22, 72, 1);
-
-    /* Organisation de l'en-tête en trois colonnes */
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-    font-family: "Parisienne", cursive;
 }
 
 
@@ -73,6 +67,33 @@ H2 {
    03 — MENU DE NAVIGATION LIQUID GLASS
    ================================================== */
 
+   .menu {
+    
+
+/* Apparence de l'arrière-plan */
+background: rgba(33, 21, 44, 0.19); /* Opacité : 0 = transparent, 1 = opaque */
+backdrop-filter: blur(10px);       /* Plus la valeur augmente, plus l'arrière-plan est flou */
+border: none;
+
+/* Dimensions et espacements */
+padding: 0.8rem 5%; /* 0.8rem : haut et bas | 5% : gauche et droite */
+min-height: 11vh;   /* Hauteur minimale correspondant à 11% de la hauteur de la fenêtre */
+width: 100%;        /* Occupe toute la largeur disponible */
+box-sizing: border-box; /* Évite les débordements liés au padding et aux bordures */
+
+/* Positionnement pendant le défilement */
+position: sticky; /* Le menu reste collé en haut pendant le défilement */
+top: 0;           /* Augmenter la valeur éloigne le menu du haut de la fenêtre */
+z-index: 10;      /* Définit l'ordre de superposition avec les autres éléments */
+
+/* Organisation de l'en-tête */
+display: grid;
+grid-template-columns: 1fr auto 1fr; /* Gauche : 1 fraction | Centre : largeur du contenu | Droite : 1 fraction */
+align-items: center; /* Alignement vertical : start, center ou end */
+
+/* Typographie */
+font-family: Arial, Helvetica, sans-serif;
+   }
 .LiquidGlass {
 
     /* Disposition du menu */
@@ -296,6 +317,7 @@ nav li:not(:last-child)::after {
 
 footer {
     padding: 5em 7%;
+    background-color: #1D122E;
 }
 
 
