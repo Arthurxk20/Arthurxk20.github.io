@@ -1,92 +1,119 @@
-.index {
-    color: white;
-    font-family: "Parisienne", cursive;
-    text-align: center;
-    padding: 20px;
-}
-
-
+/* ==================================================
+   01 — CONFIGURATION GÉNÉRALE DU SITE
+   ================================================== */
 
 head {
 }
-.bordureenhaut {
-    border-top: 3px #2F1648 solid;
-    border-right: 3px #2F1648 solid;
-    border-bottom: 3px #2F1648 solid;
-    border-left: 3px #2F1648 solid;
-    background: rgba(47, 22, 72, 1);
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center; /* Aligne verticalement les éléments */
-    font-family: "Parisienne", cursive;
-   
+
+body {
+    /* Superposition de trois dégradés pour créer les jeux de lumière */
+    background:
+        radial-gradient(ellipse at 85% 22%, #ad6bdc95, transparent 53%),
+        radial-gradient(ellipse at 20% 90%, #6237b6, transparent 60%),
+        linear-gradient(135deg, #2f1648, #503075 48%, #372050);
+
+    min-height: 100vh; /* Hauteur minimale de la fenêtre */
+    margin: 0;        /* Supprime les marges du navigateur */
+    color: rgb(255, 255, 255);
 }
+
 p,
 H2 {
     color: rgb(255, 255, 255);
 }
 
-.Titre {
-    color: rgba(102, 26, 202, 1); /* opassité entre 1 et 0 */
-    text-decoration: underline;
-     font-family: "Parisienne", cursive;
-     font-size: 5em;
-     text-align: center;
-     background-color: rgba(255, 155, 255, 0.5);
+
+/* ==================================================
+   02 — EN-TÊTE DU SITE (HEADER)
+   ================================================== */
+
+.bordureenhaut {
+    border-top: 3px #2F1648 solid;
+    border-right: 3px #2F1648 solid;
+    border-bottom: 3px #2F1648 solid;
+    border-left: 3px #2F1648 solid;
+
+    background: rgba(47, 22, 72, 1);
+
+    /* Organisation de l'en-tête en trois colonnes */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    font-family: "Parisienne", cursive;
 }
 
-body {
-    background:
-        radial-gradient(ellipse at 85% 22%, #ad6bdc95, transparent 53%),
-        radial-gradient(ellipse at 20% 90%, #6237b6, transparent 60%),
-        linear-gradient(135deg, #2f1648, #503075 48%, #372050);
-         min-height: 100vh;
+
+/* Propriétés communes au logo et au numéro de page */
+
+.Logo, .Numero {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
     margin: 0;
-    color: rgb(255, 255, 255);
-    
-}
-/*
-.Info-GitHub {
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-     font-family: "Parisienne", cursive;
-} */
-
-.H2 {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-     font-family: "Parisienne", cursive;
-}
-
-.buttonpage2 {
-    color: rgb(255, 255, 255);
-     font-family: "Parisienne", cursive;
-     display : inline-block;
-     padding : 10px;
-     border : 1px solid rgb(255, 255, 255);
-     
-}
-.LienCiel{
-    color: rgb(255, 255, 255);                /* Couleur du texte */
-    text-decoration: underline;  /* Souligne le lien */
-    display: inline-block;       /* Autorise l'agrandissement */
-    transition: transform 0.3s;  /* Animation progressive */
-}
-
-.LienCiel:hover {
-    transform: scale(1.10);     /* Agrandissement de 15 % */
-    cursor: pointer;            /* Curseur en forme de main */
 }
 
 
-/* Place les points entre les liens */
-/* Place les points entre les liens */
+/* Logo situé à gauche de l'en-tête */
+
+.Logo {
+    justify-self: start;
+    margin-left: 20px;
+    font-size: 1.6em;
+}
+
+
+/* Numéro de page situé à droite de l'en-tête */
+
+.Numero {
+    justify-self: end;
+    margin-right: 20px;
+    font-size: 1.6em;
+}
+
+
+/* ==================================================
+   03 — MENU DE NAVIGATION LIQUID GLASS
+   ================================================== */
+
+.LiquidGlass {
+
+    /* Disposition du menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+
+    /* Dimensions et espacements */
+    width: fit-content;
+    margin: auto;
+    padding: 15px 30px;
+
+    /* Transparence et flou du verre */
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(2px);
+
+    /* Bordure et forme du verre */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+
+    /* Ombre extérieure et reflet lumineux intérieur */
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.47);
+}
+
+
+/* Points séparateurs entre les liens du menu */
+
 nav li:not(:last-child)::after {
     content: "•";
     margin-left: 20px;
 }
 
-/* Personnalise les liens */
+
+/* Apparence normale des liens du menu */
+
 .LiquidGlass a {
     color: #e8d9f6;
     text-decoration: none;
@@ -95,73 +122,143 @@ nav li:not(:last-child)::after {
     font-size: 1.5em;
 }
 
-/* Agrandit les liens au survol */
+
+/* Animation et halo lumineux au passage de la souris */
+
 .LiquidGlass a:hover {
     transform: scale(1.15);
-       color: #FFFFFF;
+    color: #FFFFFF;
     text-shadow: 0 0 12px #DDAFFF;
-
-}
-/* test d'interface graphique pour le menu de navigation */
-.LiquidGlass {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-    width: fit-content;
-    margin: auto;
-    padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.07);
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 50px;
-    box-shadow: 0 8px 32px  rgba(0, 0, 0, 0.15),
-    inset 0 1px 2px rgba(255, 255, 255, 0.47);
 }
 
 
+/* ==================================================
+   04 — PREMIÈRE PARTIE : PRÉSENTATION
+   ================================================== */
 
-.Logo, .Numero {
+.index {
+    color: white;
+    font-family: "Parisienne", cursive;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Titre principal */
+
+.Titre {
+    color: rgba(102, 26, 202, 1); /* Opacité comprise entre 0 et 1 */
+    text-decoration: underline;
+    font-family: "Parisienne", cursive;
+    font-size: 5em;
+    text-align: center;
+    background-color: rgba(255, 155, 255, 0.5);
+}
+
+
+/* Titre secondaire */
+
+.H2 {
     color: rgb(255, 255, 255);
-    font-size: 1em; /* taille du texte */
-    margin: 0;
+    text-decoration: underline;
+    font-family: "Parisienne", cursive;
 }
 
-.Numero {
-    justify-self: end; /* Place le numéro à droite */
-    margin-right: 20px;
-    font-size: 1.6em;
-}
 
-.Logo {
-    justify-self: start; /* Place le logo à gauche */
-    margin-left: 20px;
-    font-size: 1.6em;
-}
-
-.partie2 {
-    background-color: #F0EAF4; /* Blanc légèrement violet */
-    color: #241830;            /* Couleur du texte */
-    min-height: 60vh;          /* Hauteur minimale */
-    padding: 5em 7%;          /* Espacement intérieur */
-}
-
-.partie3 {
-    background-color: #2f1648; /* Blanc légèrement violet */
-    color: #ffffff;            /* Couleur du texte */
-    min-height: 60vh;          /* Hauteur minimale */
-    padding: 5em 7%;          /* Espacement intérieur */
-}
-
-footer {
-
-padding: 5em 7%;    
-
-}
+/* Mise en forme personnalisée du texte */
 
 .tt {
     color: rgb(255, 255, 255);
-     justify-self: start;
-     font-family: "Parisienne", cursive;
+    justify-self: start;
+    font-family: "Parisienne", cursive;
 }
+
+
+/* Lien vers la présentation du Bac Pro CIEL */
+
+.LienCiel {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+
+/* Animation du lien CIEL au survol */
+
+.LienCiel:hover {
+    transform: scale(1.10); /* Agrandissement de 10 % */
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   05 — DEUXIÈME PARTIE : RÉALISATIONS ET PROJETS
+   ================================================== */
+
+.partie2 {
+    background-color: #F0EAF4; /* Blanc légèrement violet */
+    color: #241830;            /* Texte violet sombre */
+    min-height: 60vh;
+    padding: 5em 7%;
+}
+
+
+/* Image présentant le code source du portfolio */
+
+.ImageCode {
+    width: 100%;        /* S'adapte à l'espace disponible */
+    max-width: 500px;   /* Limite la largeur de l'image */
+    height: auto;      /* Conserve les proportions */
+    border-radius: 8px;
+
+    /* Ombre extérieure de l'image */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==================================================
+   06 — TROISIÈME PARTIE : PARCOURS
+   ================================================== */
+
+.partie3 {
+    background-color: #2f1648; /* Violet profond */
+    color: #ffffff;
+    min-height: 60vh;
+    padding: 5em 7%;
+}
+
+
+/* ==================================================
+   07 — BOUTONS
+   ================================================== */
+
+.buttonpage2 {
+    color: rgb(255, 255, 255);
+    font-family: "Parisienne", cursive;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+/* ==================================================
+   08 — PIED DE PAGE (FOOTER)
+   ================================================== */
+
+footer {
+    padding: 5em 7%;
+}
+
+
+/* ==================================================
+   09 — ANCIEN CODE DÉSACTIVÉ ET EXPÉRIMENTATIONS
+   ================================================== */
+
+/*
+.Info-GitHub {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    font-family: "Parisienne", cursive;
+}
+*/
