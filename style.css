@@ -3,6 +3,7 @@
    ================================================== */
 
 head {
+
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     color: #F8F4FF;
     margin: 0;
     min-height: 100vh;
+    padding: 0;
 
     color: rgb(255, 255, 255);
 }
@@ -29,7 +31,7 @@ H2 {
     border-right: 3px #2F1648 solid;
     border-bottom: 3px #2F1648 solid;
     border-left: 3px #2F1648 solid;
-
+    min-height: 11vh;
     background: rgba(47, 22, 72, 1);
 
     /* Organisation de l'en-tête en trois colonnes */
@@ -79,12 +81,12 @@ H2 {
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 40px;
 
     /* Dimensions et espacements */
     width: fit-content;
     margin: auto;
-    padding: 15px 30px;
+    padding: 20px 40px;
 
     /* Transparence et flou du verre */
     background: rgba(255, 255, 255, 0.07);
@@ -105,7 +107,7 @@ H2 {
 
 nav li:not(:last-child)::after {
     content: "•";
-    margin-left: 20px;
+    margin-left: 2em;
 }
 
 
@@ -116,7 +118,7 @@ nav li:not(:last-child)::after {
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 
@@ -125,7 +127,7 @@ nav li:not(:last-child)::after {
 .LiquidGlass a:hover {
     transform: scale(1.15);
     color: #FFFFFF;
-    text-shadow: 0 0 12px #DDAFFF;
+    text-shadow: 2em #DDAFFF;
 }
 
 
@@ -148,8 +150,8 @@ nav li:not(:last-child)::after {
 
     position: relative;
     overflow: hidden;
-    min-height: 80vh;
-    padding: 50px 7%;
+    min-height: 90vh;
+    padding: 1em;
 }
 
 
@@ -199,22 +201,42 @@ nav li:not(:last-child)::after {
     transform: scale(1.10); /* Agrandissement de 10 % */
     cursor: pointer;
 }
-.Cercle {     /* élement graphique rajouter par l'ia */ 
+/* ==================================================
+   ANNEAUX DÉCORATIFS — LIQUID GEL
+   ================================================== */
+
+.Cercle {      /*Cercle décoratif animé généré par ia sous ma supervision*/
     position: absolute;
-    width: 350px;
-    height: 350px;
-    right: -80px;
-    top: 45px;
+
+    /* Dimensions adaptatives */
+    width: clamp(12rem, 30vw, 28rem);
+    aspect-ratio: 1 / 1;
+
+    /* Positionnement */
+    right: -5rem;
+    top: 3rem;
+
+    /* Forme et transparence */
     border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.26);
 
-    border: 1px solid rgba(255, 255, 255, 0.13);
+    /* Reflet lumineux intérieur */
+    background: radial-gradient(
+        circle at 30% 25%,
+        rgba(228, 184, 255, 0.09),
+        transparent 70%
+    );
 
+    /* Anneaux lumineux */
     box-shadow:
-        0 0 0 24px rgba(255, 255, 255, 0.03),
-        0 0 0 50px rgba(255, 255, 255, 0.025),
-        0 0 0 76px rgba(255, 255, 255, 0.02);
+        inset 0 0 2rem rgba(255, 255, 255, 0.04),
+        0 0 0 1.5rem rgba(255, 255, 255, 0.05),
+        0 0 0 3rem rgba(255, 255, 255, 0.035),
+        0 0 0 4.5rem rgba(255, 255, 255, 0.025),
+        0 0 0 6rem rgba(255, 255, 255, 0.015);
 
     pointer-events: none;
+    will-change: transform;
 }
 
 /* ==================================================

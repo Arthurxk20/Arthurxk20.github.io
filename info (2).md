@@ -36,3 +36,17 @@ target="_top"	Ouvre le lien dans la fenêtre principale, en dehors des cadres. o
 image 
   <a href ="image Poire Tag/poire zoom.png" target="_blank"> ouvrir elle sir image ci dessous est cliqué 
           <img src="image Poire Tag/poire.png" alt="Logo de Poire Tag" title="Logo de Poire Tag" width="100" height="100">
+
+em : s'adapte à la taille de la police de l'élément.
+
+
+
+rem : s'adapte à la taille de police générale du site.
+
+
+
+vw : s'adapte directement à la largeur de l'écran.
+
+
+
+px : conserve une dimension fixe.
